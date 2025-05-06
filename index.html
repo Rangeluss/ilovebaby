@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redireccionando...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f0f0f0;
+    }
+
+    .loader {
+      border: 12px solid #f3f3f3;
+      border-top: 12px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script>
+    // Redirige en una nueva ventana/pestaña después de 2 segundos
+    setTimeout(() => {
+      window.open("./index1.html", "_blank");
+    }, 2000);
+  </script>
+</head>
+<body>
+  <div class="loader"></div>
+  <p>Abriendo sitio... por favor espera.</p>
+  <p>Si no se abre automáticamente, haz clic <a href="./index1.html" target="_blank">aquí</a>.</p>
+</body>
+</html>
